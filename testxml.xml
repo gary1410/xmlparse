@@ -1,0 +1,8 @@
+<data name="Export_AbsenceInfo copy" time="2013-12-04 20:35:00Z" xmlns="">
+  <row conf="89059661" absence_instance_id="129549898" created="6/28/2012" date="7/5/2012" employee_identifier="MichelleTeacher" school_external_id="901" school_name="Training Port City Academy" substitute_identifier="" start_time_absence="7:30:00 AM" end_time_absence="4:00:00 PM" filled="No" absence_reason="Sick Day" approval_status="Unapproved" approved_by="" duration_absence="8.50" reconciled_date="" reconciled="No" />
+  <row conf="89065127" absence_instance_id="129560459" created="6/29/2012" date="7/2/2012"
+    employee_identifier="EmmileTeacher" school_external_id="902" school_name="Training Langston
+    Hughes Academy" substitute_identifier="" start_time_absence="7:30:00 AM"
+    end_time_absence="4:00:00 PM" filled="No" absence_reason="Bereavement"
+    approval_status="Unapproved" approved_by="" duration_absence="8.50" reconciled_date=""reconciled="No" />
+</data>
