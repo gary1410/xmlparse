@@ -8,12 +8,11 @@ class Absence
   end
 
   def parse(file)
-      xmlfile = Nokogiri::HTML(File.open(file))
-      data = xmlfile.search('row').map do |row|
-        Hash[row.attributes.keys.zip(row.attributes.values.map(&:value))]
+    xmlfile = Nokogiri::HTML(File.open(file))
+    data = xmlfile.search('row').map do |row|
+      Hash[row.attributes.keys.zip(row.attributes.values.map(&:value))]
     end
   end
-
 
   def create_table(table_name)
     @database.create_table table_name do
