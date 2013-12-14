@@ -1,5 +1,5 @@
 require 'nokogiri'
-require 'Sequel'
+require 'sequel'
 
 class Absence
 
@@ -48,10 +48,11 @@ end
 #creates the database file after each new instance
 absence = Absence.new("absencedb")
 
-#parse for AesopAbsences.xml
+#parses for AesopAbsences.xml or any file
 parse = absence.parse('AesopAbsences.xml')
 
 #creates table within the database
 absence.create_table(:absencedata)
 
+#inserts table with data in the database
 absence.insert_table(:absencedata, parse)
