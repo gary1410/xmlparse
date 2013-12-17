@@ -24,7 +24,7 @@ Installation
 $ ruby parser.rb
 .
 .
-$ sqlite3 absencedb [or whatever you want to name the database file here.  Change like 49 if necessary]
+$ sqlite3 absencedb [or whatever you want to name the database file here.  For example change 49 if necessary]
 $ SELECT * FROM absencedata [whatever table name]
 ```
 
@@ -40,7 +40,7 @@ For example:
 absence = Absence.new("choose DB Name")
 
 #parses for AesopAbsences.xml or any file
-parse = absence.parse('Choose XML fil')
+parse = absence.parse('Choose XML file')
 
 #creates table within the database
 absence.create_table(:choose_table_name)
