@@ -10,7 +10,7 @@ class Absence
   def parse(file)
     xmlfile = Nokogiri::HTML(File.open(file))
     data = xmlfile.search('row').map do |row|
-      Hash[row.attributes.keys.zip(row.attributes.values.map(&:value))]
+      Hash[row.attributes.keys.zip(row.attributes.values.map {|x| x.value})]
     end
   end
 
