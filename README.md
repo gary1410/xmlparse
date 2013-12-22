@@ -20,6 +20,13 @@ Dillinger uses a number of open source projects to work properly:
 Installation
 --------------
 
+run
+```sh
+$ bundle install
+```
+to include two dependencies: 1) `gem 'nokogirl'` and 2) `gem 'sequel'`
+
+
 ```sh
 $ ruby parser.rb
 .
